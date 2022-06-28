@@ -1,0 +1,13 @@
+
+<h2>{{response.title}}</h2>
+<p><b>Genre: </b>{{response.genre}}</p>
+<p><b>Plot: </b>{{response.plot}}</p>
+<ul>
+{{#each response.cast}}
+    <li>{{this.name}}</li>
+    <li>{{this.ocupation}}</li>
+    <li>{{this.catchPhrase}}</li>
+    
+{{/each}}
+</ul>
+
