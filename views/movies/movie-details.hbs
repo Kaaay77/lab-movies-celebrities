@@ -9,5 +9,9 @@
     <li>{{this.catchPhrase}}</li>
     
 {{/each}}
+<form action="/movies/{{response._id}}/delete" method="post">
+<button type="submit">Delete Movie</button>
+</form>
 </ul>
 
+<a href="/movies/{{response._id}}/edit">Edit Movie</a>
